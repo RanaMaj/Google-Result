@@ -1,0 +1,74 @@
+/* === Global Style === */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: none;
+    list-style: none;
+}
+
+:root {
+    --main-color: #202124;
+    --light-color: #FFFFFF;
+    --dark-color: #171717;
+}
+
+body {
+    background-color: var(--main-color);
+    margin: 0% 4%;
+}
+
+/* === Start Header Style === */
+.fixed-header {
+    display: grid;
+    grid-template-areas:
+        " time1 time2 time3"
+    ;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.google-logo {
+    grid-area: 'time1';
+    width: 20%;
+    margin-top: 43%;
+}
+
+.logo-search {
+    display: grid;
+    grid-template-areas:
+        " time1 time2"
+    ;
+}
+
+.fixed-header .google-logo img {
+    width: 92px;
+    height: 33px;
+    margin: 2% 0%;
+}
+
+/* === End Header Style === */
+
+/* === .search-part ===  */
+.search-part {
+    background-color: #303134;
+    width: 691px;
+    height: 55px;
+    display: inline-block;
+    border-radius: 50px;
+    grid-area: 'time2';
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+.search-part input {
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 3% 5%;
+}
+
+/* === setting-part === */
+.setting-part {
+    grid-area: 'time3';
+}
